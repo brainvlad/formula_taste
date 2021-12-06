@@ -1,0 +1,36 @@
+/* home section */
+.home { 
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;      
+    background-color: #EDB8D4;
+}
+.home-1 {
+    margin-top: 110px;
+    background-image: url(../img/index/home-bg-1.png);      
+}
+.home-2 {
+    background-image: url(../img/index/home-bg-2.png);      
+}
+.home-3 {
+    background-image: url(../img/index/home-bg-3.png);      
+}
+.home__content {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.home:nth-child(even) .home__content {
+    align-items: flex-end;
+}
+.home__title {
+    font-style: normal;
+    font-weight:lighter;
+    font-size: 120px;
+}
+.home__btn {
+    margin-bottom: 150px;
+}
