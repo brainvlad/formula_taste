@@ -34,3 +34,25 @@
 .home__btn {
     margin-bottom: 150px;
 }
+
+
+/* responsive */
+@media (max-width: 1180px) {
+    .home:nth-child(even) .home__content {
+        align-items: flex-start;
+    }
+    .home__title {
+        font-size: 100px;
+    }
+}
+@media (max-width: 620px) {
+    .home__title {
+        font-size: 80px;
+    }
+}
+@media (max-width: 400px) {
+    .home__title {
+        font-size: 55px;
+    }
+}
+
