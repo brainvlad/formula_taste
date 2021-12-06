@@ -1,0 +1,132 @@
+.welcome {
+    width: 100%;
+    height: 50vh;
+    min-height: 350px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;      
+    background-color: #EDB8D4; 
+}
+.welcome-donuts {
+    background-image: url(../img/donuts/title-bg.jpg);   
+}
+.welcome-macaroons {
+    background-image: url(../img/macaroons/title-bg.jpg);   
+}
+.welcome-milkshakes {
+    background-image: url(../img/milkshakes/title-bg.jpg);   
+}
+.welcome__title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.44);
+}
+
+
+/* goods */
+.goods {
+}
+.goods__item {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.goods__item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.goods__img {
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.goods__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.goods__img-overlay {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 65px;
+    line-height: 71px;
+    text-align: center;
+    color: #fefefe;
+
+    transition: all .5s;
+}
+.goods__img-overlay span {
+    font-weight: 600;
+}
+.goods__img-text {
+    opacity: 0;
+    transition: opacity .1s linear;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center  ;
+}
+.goods__img:hover .goods__img-overlay {
+    visibility: visible;
+    height: 100%;
+}
+.goods__img:hover .goods__img-text {
+    text-align: center;
+    opacity: 1;
+}
+.goods__nav {
+    display: flex;
+    padding: 30px;
+}
+.goods__info {
+}
+.goods__title {
+    font-size: 38px;
+}
+.goods__desc {
+    font-size: 24px;
+    line-height: 46px;
+}
+.goods__price {
+    font-size: 32px;
+}
+.goods__menu {
+    display: flex;
+    align-items: flex-end;
+    font-size: 38px;
+}
+.goods__menu i {
+    cursor: pointer;
+    height: fit-content;
+    margin: 10px;
+
+    transition: color .3s;
+}
+.goods__menu i:hover {
+    color: #404040;
+}
+/* goods */

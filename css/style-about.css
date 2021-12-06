@@ -1,0 +1,143 @@
+.welcome {
+    height: 80vh;
+    max-height: 800px;
+    min-height: 600px;
+
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;      
+    background-color: #EDB8D4; 
+    background-image: url(../img/about/welcome-bg.jpg);   
+}
+
+.description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 66px;
+    margin: 50px auto;
+}
+.description span {
+    font-size: 64px;
+}
+
+.advatages {
+    display: flex;
+    align-items: flex-start;
+    margin: 50px auto;
+}
+.advantages__item {
+    flex: 1;
+    text-align: center;
+    height: max-content;
+    line-height: 46px;
+}
+.advantages__item img {
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.team {
+    margin: 50px auto;
+}
+.team__people {
+    display: flex;
+}
+.team__item {
+    flex: 1;
+    height: 600px;
+    border: 1px solid transparent;
+}
+.team__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.team__desc {
+    margin: 20px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 46px;
+}
+
+.cafes {
+    margin: 50px auto;
+}
+.cafes__title {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 112px;
+    text-align: center;
+}
+.cafes__title span {
+    font-weight: 600;
+}
+.cafes__galery {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.cafes__item {
+    flex: 1;
+    margin: 10px;
+}
+.cafes__img {
+    width: inherit;
+    height: 500px;
+}
+.cafes__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cafes__contacts {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 46px;
+}
+.cafes__place {
+}
+.cafes__place span {
+    font-weight: normal ;
+}
+.cafes__tel {
+}
+.cafes__tel a {
+    text-decoration: none;
+    color: #101010;
+}
+.cafes__tel a:hover {
+    text-decoration: underline;
+}
+
+.delivery {
+    margin: 50px auto;
+}
+.delivery p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 46px;
+    text-align: center;
+}
+.delivery p span {
+    font-weight: 300;
+}
+.delivry__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    text-align: center;
+}
+.delivery__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+}
