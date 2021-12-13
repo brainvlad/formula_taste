@@ -113,6 +113,9 @@
 }
 .goods__price {
     font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .goods__menu {
     display: flex;

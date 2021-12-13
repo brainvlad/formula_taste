@@ -110,6 +110,9 @@ a.btn {
     width: 100%;
     background-color: #fefefe;
 }
+.footer__gradient {
+    background: linear-gradient(180.09deg, #FFFFFF 8.74%, #FDD5E0 94.8%, #FDD5E0 94.81%, #FDD5E0 94.82%);
+}
 .footer__content {
     display: flex;
     justify-content: space-between;
@@ -173,7 +176,6 @@ a.btn {
 }
 /* footer */
 
-/* responive */
 
 /* responsive */
 @media (max-width: 1180px) {

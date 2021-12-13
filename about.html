@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/style-about.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/style-popup.css">
 
     <!-- include fonts Cairo, Open Sans-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,6 +32,8 @@
     <link rel="mask-icon" href="img/favicon//safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <script src="js/cart.js" defer></script>s
 </head>
 
 <body>
@@ -47,7 +50,7 @@
             </div>
             <div class="header__tools">
                 <i class="far fa-heart"></i>
-                <i class="fas fa-shopping-cart"></i>
+                <i class="cart-open fas fa-shopping-cart"></i>
             </div>
         </div>
     </hedaer>
@@ -179,9 +182,9 @@
             </div>
             <div class="footer__menu">
                 <nav class="footer__list">
-                    <li class="footer__item"><a href="">О нас</a></li>
-                    <li class="footer__item"><a href="">Доставка</a></li>
-                    <li class="footer__item"><a href="">Контакты</a></li>
+                    <li class="footer__item"><a href="about.html">О нас</a></li>
+                    <li class="footer__item"><a href="index.html">Доставка</a></li>
+                    <li class="footer__item"><a href="about.html">Контакты</a></li>
                     <li class="footer__item"><a>Подпишись на нас</a></li>
                 </nav>
                 <div class="footer__social header__social">
@@ -196,6 +199,43 @@
         </div>
     </footer>
     <!-- footer -->
+
+    <!-- Popup -->
+    <div class="popup__overlay"></div>
+    <section class="cart__popup popup">
+        <div class="popup__close">
+            <i class="fas fa-window-close"></i>
+        </div>
+        <table class="cart">
+            <colgroup>
+                <col class="col-name">
+                <col class="col-price">
+                <col class="col-counter">
+                <col class="col-delete">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Цена</th>
+                    <th>Кол-во</th>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody class="cart__list">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2">Общая сумма:</th>
+                    <th class="cart-table__total" colspan="2"><span class="total-sum">10000</span> BYN</th>
+                </tr>
+            </tfoot>
+        </table>
+        <button class="cart__sale">
+            Купить
+        </button>
+    </section>
+    <!-- Popup -->
 
     <!-- js -->
     <script src="js/top-menu.js"></script>
