@@ -33,7 +33,8 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <script src="js/cart.js" defer></script>s
+    <script src="js/cart.js" defer></script>
+    <script src="js/favorites.js" defer></script>
 </head>
 
 <body>
@@ -49,7 +50,7 @@
                 <img src="img/header-logo.svg" alt="logo formula taste">
             </div>
             <div class="header__tools">
-                <i class="far fa-heart"></i>
+                <i class="favor-open far fa-heart"></i>
                 <i class="cart-open fas fa-shopping-cart"></i>
             </div>
         </div>
@@ -57,112 +58,131 @@
     <!-- header -->
 
     <main>
-        <section class="welcome"></section>
+        <!-- <section class="welcome"></section>
         <section class="description container">
             <span>FORMULA TASTE</span> - это новый взгляд на традиционные десерты.
             Разнообразие вкусов поразит даже бывалых ценителей.
             Макаруны, пончики и милкшейки по авторским рецептам из натуральных ингридиентов, главный из которых - наша
             любовь
-        </section>
-        <section class="advatages container">
-            <div class="advantages__item">
-                <img src="img/about/icon-1.svg" alt="advatage">
-                <h2>
-                    натуральные<br>
-                    ингредиенты
+        </section> -->
+        <XML ID="welcome" SRC="About.xml">
+            <?xml version="1.0" encoding="utf-8" ?>
+            <section class="welcome"></section>
+            <section class="description container">
+                <span>FORMULA TASTE</span> - это новый взгляд на традиционные десерты.
+                Разнообразие вкусов поразит даже бывалых ценителей.
+                Макаруны, пончики и милкшейки по авторским рецептам из натуральных ингридиентов, главный из которых -
+                наша
+                любовь
+            </section>
+        </XML>
+        <XML ID="advatages" SRC="About.xml">
+            <section class="advatages container">
+                <div class="advantages__item">
+                    <img src="img/about/icon-1.svg" alt="advatage">
+                    <h2>
+                        натуральные<br>
+                        ингредиенты
+                    </h2>
+                </div>
+                <div class="advantages__item">
+                    <img src="img/about/icon-2.svg" alt="advatage">
+                    <h2>
+                        авторские<br>
+                        рецепты
+                    </h2>
+                </div>
+                <div class="advantages__item">
+                    <img src="img/about/icon-3.svg" alt="advatage">
+                    <h2>
+                        сделано<br>
+                        с любовью
+                    </h2>
+                </div>
+            </section>
+        </XML>
+        <XML ID="team" SRC="About.xml">
+            <section class="team container">
+                <div class="team__people">
+                    <div class="team__item">
+                        <img src="img/about/team-1.webp" alt="team formula taste">
+                    </div>
+                    <div class="team__item">
+                        <img src="img/about/team-2.webp" alt="team formula taste">
+                    </div>
+                </div>
+                <div class="team__desc">
+                    Работы от профессиональных кондитеров, обучавшихся у мастеров с мировым именем, имеющих большое
+                    количество международных наград.
+                </div>
+            </section>
+        </XML>
+        <XML ID="cafes" SRC="About.xml">
+            <section class="cafes container">
+                <h2 class="cafes__title">
+                    <span>Заведения</span> Formula Taste
                 </h2>
-            </div>
-            <div class="advantages__item">
-                <img src="img/about/icon-2.svg" alt="advatage">
-                <h2>
-                    авторские<br>
-                    рецепты
-                </h2>
-            </div>
-            <div class="advantages__item">
-                <img src="img/about/icon-3.svg" alt="advatage">
-                <h2>
-                    сделано<br>
-                    с любовью
-                </h2>
-            </div>
-        </section>
-        <section class="team container">
-            <div class="team__people">
-                <div class="team__item">
-                    <img src="img/about/team-1.webp" alt="team formula taste">
-                </div>
-                <div class="team__item">
-                    <img src="img/about/team-2.webp" alt="team formula taste">
-                </div>
-            </div>
-            <div class="team__desc">
-                Работы от профессиональных кондитеров, обучавшихся у мастеров с мировым именем, имеющих большое
-                количество международных наград.
-            </div>
-        </section>
-        <section class="cafes container">
-            <h2 class="cafes__title">
-                <span>Заведения</span> Formula Taste
-            </h2>
-            <div class="cafes__galery">
-                <div class="cafes__item">
-                    <div class="cafes__img">
-                        <img src="img/about/cafe-1.png" alt="team formula cafe">
-                    </div>
-                    <div class="cafes__contacts">
-                        <div class="cafes__place">
-                            <span>ул. Сторожевская</span>, 6
+                <div class="cafes__galery">
+                    <div class="cafes__item">
+                        <div class="cafes__img">
+                            <img src="img/about/cafe-1.png" alt="team formula cafe">
                         </div>
-                        <div class="cafes__tel">
-                            <a href="tel:+375293958888">+375 (29) 395-88-88</a>
+                        <div class="cafes__contacts">
+                            <div class="cafes__place">
+                                <span>ул. Сторожевская</span>, 6
+                            </div>
+                            <div class="cafes__tel">
+                                <a href="tel:+375293958888">+375 (29) 395-88-88</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cafes__item">
+                        <div class="cafes__img">
+                            <img src="img/about/cafe-2.png" alt="team formula cafe">
+                        </div>
+                        <div class="cafes__contacts">
+                            <div class="cafes__place">
+                                <span>ул. Леонардо да Винчи</span>, 2
+                            </div>
+                            <div class="cafes__tel">
+                                <a href="tel:+375291952222">+375 (29) 195-22-22</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cafes__item">
+                        <div class="cafes__img">
+                            <img src="img/about/cafe-3.png" alt="team formula cafe">
+                        </div>
+                        <div class="cafes__contacts">
+                            <div class="cafes__place">
+                                <span>пр. Победителей</span>, 106
+                            </div>
+                            <div class="cafes__tel">
+                                <a href="tel:+375291054444">+375 (29) 105-44-44</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="cafes__item">
-                    <div class="cafes__img">
-                        <img src="img/about/cafe-2.png" alt="team formula cafe">
-                    </div>
-                    <div class="cafes__contacts">
-                        <div class="cafes__place">
-                            <span>ул. Леонардо да Винчи</span>, 2
-                        </div>
-                        <div class="cafes__tel">
-                            <a href="tel:+375291952222">+375 (29) 195-22-22</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="cafes__item">
-                    <div class="cafes__img">
-                        <img src="img/about/cafe-3.png" alt="team formula cafe">
-                    </div>
-                    <div class="cafes__contacts">
-                        <div class="cafes__place">
-                            <span>пр. Победителей</span>, 106
-                        </div>
-                        <div class="cafes__tel">
-                            <a href="tel:+375291054444">+375 (29) 105-44-44</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="delivery container">
-            <h2 class="delivry__title">Доставка</h2>
-            <h3 class="delivery__subtitle">Стоимость доставки в пределах г. Минска:</h3>
-            <p>
-                при заказе на сумму от <span>20 BYN</span> до <span>60 BYN</span> – стоимость доставки 7 BYN<br>
-                при заказе на сумму от <span>60 BYN</span> до <span>100 BYN</span> – стоимость доставки 5 BYN<br>
-                при заказе на сумму свыше <span>100 BYN</span> – доставка бесплатная
-            </p>
-            <p>
-                ЗА ПРЕДЕЛЫ МИНСКА (расстояние от Минска <span>5-20</span> км максимум)<br>
-            </p>
-            <p>
-                При заказе на сумму до <span>150 BYN</span> – стоимость доставки <span>15 BYN</span><br>
-                При заказе на сумму от <span>150 BYN</span> – доставка бесплатная
-            </p>
-        </section>
+            </section>
+        </XML>
+        <XML ID="delivery" SRC="About.xml">
+            <section class="delivery container">
+                <h2 class="delivry__title">Доставка</h2>
+                <h3 class="delivery__subtitle">Стоимость доставки в пределах г. Минска:</h3>
+                <p>
+                    при заказе на сумму от <span>20 BYN</span> до <span>60 BYN</span> – стоимость доставки 7 BYN<br>
+                    при заказе на сумму от <span>60 BYN</span> до <span>100 BYN</span> – стоимость доставки 5 BYN<br>
+                    при заказе на сумму свыше <span>100 BYN</span> – доставка бесплатная
+                </p>
+                <p>
+                    ЗА ПРЕДЕЛЫ МИНСКА (расстояние от Минска <span>5-20</span> км максимум)<br>
+                </p>
+                <p>
+                    При заказе на сумму до <span>150 BYN</span> – стоимость доставки <span>15 BYN</span><br>
+                    При заказе на сумму от <span>150 BYN</span> – доставка бесплатная
+                </p>
+            </section>
+        </XML>
     </main>
 
     <!-- footer -->
@@ -234,6 +254,33 @@
         <button class="cart__sale">
             Купить
         </button>
+    </section>
+
+    <section class="favor__popup popup">
+        <div class="popup__close close-2">
+            <i class="fas fa-window-close"></i>
+        </div>
+        <div>
+            <table class="favorites">
+                <colgroup>
+                    <col class="col-name">
+                    <col class="col-price">
+                    <col class="col-card">
+                    <col class="col-delete">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Цена</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody class="favor__list">
+
+                </tbody>
+            </table>
+        </div>
     </section>
     <!-- Popup -->
 

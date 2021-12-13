@@ -38,6 +38,7 @@ const cart = () => {
     const addToCart = (id) => {
         const cart = localStorage.getItem('cart') ?
             JSON.parse(localStorage.getItem('cart')) : [];
+
         if (cart.some(good => good.id === id)) {
             const cartParse = JSON.parse(localStorage.getItem('cart'));
             clickedGood = cartParse.find(good => good.id === id);
@@ -158,6 +159,7 @@ const cart = () => {
     if (goodsContainer) {
         goodsContainer.addEventListener('click', (event) => {
             if (event.target.closest('.fa-shopping-cart')) {
+                event.target.closest('.fa-shopping-cart').classList.toggle('active')
                 const buttonToCart = event.target.closest('.goods__menu')
                 const goodId = buttonToCart.dataset.id
 

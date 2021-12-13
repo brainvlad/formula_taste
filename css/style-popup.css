@@ -108,6 +108,10 @@ td {
     border-radius: 100px;
 }
 
+.favor__list .goods__menu {
+    font-size: 18px;
+}
+
 @media (max-width: 550px) {
     .popup {
         max-height: initial;

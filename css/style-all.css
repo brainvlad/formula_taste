@@ -176,14 +176,17 @@ a.btn {
 }
 /* footer */
 
+.fa-heart:active,
+.fa-shopping-cart:active {
+    transform: scale(0.95);
+}
+.fa-heart.active,
+.fa-shopping-cart.active {
+    color: #EDB8D4;
+}
 
 /* responsive */
 @media (max-width: 1180px) {
-    /* header */
-    .header__logo {
-        display: none;
-    }
-
     /* footer */
     .footer__content {
         flex-direction: column;
@@ -194,6 +197,11 @@ a.btn {
     }
 }
 @media (max-width: 530px) {
+    /* header */
+    .header__logo {
+        display: none;
+    }
+
     .footer__times div:first-child {
         font-size: 22px;
     }

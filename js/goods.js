@@ -1,11 +1,16 @@
 const renderGoods = (goods) => {
     const goodsContainer = document.querySelector('.goods__list')
 
+    const favorite = JSON.parse(localStorage.getItem('favorites'))
+    const cart = JSON.parse(localStorage.getItem('cart'))
+
     goodsContainer.innerHTML = ""
 
     goods.forEach(good => {
         const goodBlock = document.createElement('div')
 
+        const activeFavor = favorite.find(favorit => favorit.id == good.id) ? 'active' : ''
+        const activeCart = cart.find(cartItem => cartItem.id == good.id) ? 'active' : ''
 
         goodBlock.classList.add('goods__item')
 
@@ -30,8 +35,8 @@ const renderGoods = (goods) => {
                             <span>${good.price}</span> руб/1 шт
                         </div>
                         <div class="goods__menu" data-id="${good.id}">
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-shopping-cart"></i>
+                            <i class="far fa-heart ${activeFavor}"></i>
+                            <i class="fas fa-shopping-cart ${activeCart}"></i>
                         </div>
                     </div>
                 </div>
