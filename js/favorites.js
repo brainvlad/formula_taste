@@ -58,18 +58,20 @@ const favor = () => {
             <td class="favor__price">
                 <span>${(+good.price).toFixed(2)}</span> BYN
             </td>
+            <td>
+            </td>
             <td class="goods__menu" data-id="${good.id}">
                 <i class="fas fa-shopping-cart"></i>
             </td>
             <td class="goods__menu" data-id="${good.id}">
-                <i class="fas fa-heart"></i>
+                <i class="fas fa-minus-circle"></i>
             </td>
             `
 
             favorList.append(favorItem)
 
             favorItem.addEventListener('click', (event) => {
-                if (event.target.classList.contains('fa-heart')) {
+                if (event.target.classList.contains('fa-minus-circle')) {
                     const buttonTofavor = event.target.closest('.goods__menu')
                     const goodId = buttonTofavor.dataset.id
 

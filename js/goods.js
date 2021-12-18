@@ -35,7 +35,7 @@ const renderGoods = (goods) => {
                             <span>${good.price}</span> руб/1 шт
                         </div>
                         <div class="goods__menu" data-id="${good.id}">
-                            <i class="far fa-heart ${activeFavor}"></i>
+                            <i class="fas fa-heart ${activeFavor}"></i>
                             <i class="fas fa-shopping-cart ${activeCart}"></i>
                         </div>
                     </div>

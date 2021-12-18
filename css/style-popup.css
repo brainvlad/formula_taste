@@ -45,6 +45,9 @@
 }
 .cart__item {
 }
+.cart th {
+    padding: 0 5px;
+}
 .cart td {
     padding: 0 10px;
     margin: 5px 0;
